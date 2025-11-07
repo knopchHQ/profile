@@ -164,7 +164,8 @@ h1, h2, h3, h4 {
     color: var(--text-light);
     margin-bottom: 2.5rem;
     min-height: 2rem;
-    animation: fadeIn 1s ease 0.6s both;
+    opacity: 0;
+    animation: fadeIn 0.1s ease 1s forwards;
 }
 .contact-btn {
     display: inline-block;

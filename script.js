@@ -38,9 +38,12 @@ function initTypewriter() {
     var typewriterText = document.getElementById('typewriter-text');
     if (!typewriterText) return;
     
+    // No need to hide/show in JS - CSS handles it
+    typewriterText.textContent = ''; // Clear initial content
+    
     var texts = [
         "Crafting clean interfaces and small delightful experiences.",
-        "Turning ideas into functional, beautiful web applications.",
+        "Turning ideas into functional, beautiful web applications.", 
         "Building responsive websites with modern technologies."
     ];
     
@@ -53,24 +56,19 @@ function initTypewriter() {
         var currentText = texts[textIndex];
         
         if (isDeleting) {
-            // Deleting text
             typewriterText.textContent = currentText.substring(0, charIndex - 1);
             charIndex--;
             typingSpeed = 50;
         } else {
-            // Typing text
             typewriterText.textContent = currentText.substring(0, charIndex + 1);
             charIndex++;
             typingSpeed = 100;
         }
         
-        // Check if we've finished typing the current text
         if (!isDeleting && charIndex === currentText.length) {
-            // Pause at the end of typing
             typingSpeed = 2000;
             isDeleting = true;
         } else if (isDeleting && charIndex === 0) {
-            // Move to next text after deleting
             isDeleting = false;
             textIndex = (textIndex + 1) % texts.length;
             typingSpeed = 500;
@@ -79,7 +77,7 @@ function initTypewriter() {
         setTimeout(type, typingSpeed);
     }
     
-    // Start the typewriter effect after a delay
+    // Start the typewriter effect after a short delay
     setTimeout(type, 1000);
 }
 
