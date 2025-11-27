@@ -158,17 +158,6 @@ function initContactForm() {
             contactForm.reset();
         });
     }
-
-    
-    // Add click functionality to social links
-    var socialLinks = document.querySelectorAll('.social-link');
-    for (var i = 0; i < socialLinks.length; i++) {
-        socialLinks[i].addEventListener('click', function(e) {
-            e.preventDefault();
-            var platform = this.querySelector('.social-text').textContent;
-            alert('In a real website, this would link to your ' + platform + ' profile.');
-        });
-    }
 }
 
 // Scroll to Top Button
@@ -231,7 +220,7 @@ function initProjectInteractions() {
     for (var i = 0; i < downloadButtons.length; i++) {
         downloadButtons[i].addEventListener('click', function(e) {
             e.preventDefault();
-            alert('In a real portfolio, this would download your CV file.');
+            alert('CV is WIP for now. Later I will add it.');
         });
     }
 }
