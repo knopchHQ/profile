@@ -150,7 +150,7 @@ function initContactForm() {
                 return;
             }
             
-            // In a real application, you would send this data to a server
+            // In a real application, we would send this data to a server
             // For now, we'll just show a success message
             alert('Thank you for your message, ' + name + '! I will get back to you soon.');
                        
