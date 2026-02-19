@@ -7,9 +7,9 @@ This project serves as a **digital resume** — showcasing skills, experience, a
 
 ---
 
-## 👀 Preview
+## 👀 Preview (👆🏻 Clickable)
 
-![Digital Resume Screenshot](thumbnails/Profile.png)
+[![Preview](thumbnails/Profile.png)](https://knopchhq.github.io/profile/)
 
 > A sleek, responsive one-page portfolio that highlights your profile, skills, projects, and contact info — all in a minimal and elegant layout.
 
