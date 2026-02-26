@@ -38,8 +38,7 @@ function initTypewriter() {
     var typewriterText = document.getElementById('typewriter-text');
     if (!typewriterText) return;
     
-    // No need to hide/show in JS - CSS handles it
-    typewriterText.textContent = ''; // Clear initial content
+    typewriterText.textContent = '';
     
     var texts = [
         "Crafting clean interfaces and small delightful experiences.",
@@ -103,7 +102,7 @@ function initScrollAnimations() {
     
     // Remove the visible class and observe for animations
     for (var i = 0; i < fadeElements.length; i++) {
-        fadeElements[i].classList.remove('visible'); // Remove this line if you want them always visible
+        fadeElements[i].classList.remove('visible');
         observer.observe(fadeElements[i]);
     }
 }
@@ -150,8 +149,8 @@ function initContactForm() {
                 return;
             }
             
-            // In a real application, you would send this data to a server
-            // For now, we'll just show a success message
+            // The data should be sent to a server, but
+            // for now, I'll just show a success message
             alert('Thank you for your message, ' + name + '! I will get back to you soon.');
                        
             // Reset the form
